@@ -18,12 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={playfair.className}>
-      <body >
-        <Providers>
+    <html lang="en" className={playfair.className} >
+      <body className="h-full" >
+        
+        <Providers >
+          <div className="flex flex-col min-h-screen ">
          <Navbar ></Navbar>
-        {children}
+         <div className="flex flex-col grow">
+          {children}
+         </div>
+        
+        </div>
         </Providers>
+        
+       
       
         </body>
     </html>

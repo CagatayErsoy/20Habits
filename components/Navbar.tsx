@@ -12,14 +12,10 @@ export default function App() {
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
         <Button as={Link}  href="#" variant="flat" className="hover:bg-t_third hover:text-t_primary bg-t_pink text-t_secondary">
-            Login
+            About
           </Button>
         </NavbarItem>
-        <NavbarItem>
-          <Button as={Link}  href="#" variant="flat" className="hover:bg-t_third hover:text-t_primary bg-t_pink text-t_secondary">
-            Sign Up
-          </Button>
-        </NavbarItem>
+       
       </NavbarContent>
     </Navbar>
   );
