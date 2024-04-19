@@ -1,3 +1,4 @@
+'use client'
 import AnimatedTitle from "@/components/AnimatedTitle";
 import { Button, Link } from "@nextui-org/react";
 import React from "react";
