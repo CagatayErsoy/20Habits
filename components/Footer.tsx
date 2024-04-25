@@ -2,10 +2,10 @@
 import React from 'react'
 
 export default function Footer() {
-  return (
+  return ( 
     <footer>
       This is Footer
-
+    THIS IS A TEST FOR GITHUB
     </footer>
   )
 }

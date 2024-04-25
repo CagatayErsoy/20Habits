@@ -1,6 +1,6 @@
 'use client'
 
-import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, RadioGroup, Radio} from "@nextui-org/react";
+
 import React, { useState } from "react";
 import habitsData from "@/db/data"; 
 import TableElement from "@/components/TableElement";
