@@ -5,7 +5,8 @@ export default function Footer() {
   return ( 
     <footer>
       This is Footer
-    THIS IS A TEST FOR GITHUB
+  
+
     </footer>
   )
 }
