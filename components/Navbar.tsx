@@ -1,8 +1,12 @@
+'use client'
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, useDisclosure} from "@nextui-org/react";
+import About from "@/app/homepage/@about/page";
+
 
 
 export default function App() {
+  const about = useDisclosure();
   return (
     <Navbar className="bg-t_primary ">
       <NavbarBrand>
@@ -11,12 +15,13 @@ export default function App() {
    
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-        <Button as={Link}  href="#" variant="flat" className="hover:bg-t_third hover:text-t_primary bg-t_pink text-t_secondary">
+        <Button onPress={about.onOpen} variant="flat" className="hover:bg-t_third hover:text-t_primary bg-t_pink text-t_secondary">
             About
           </Button>
         </NavbarItem>
        
       </NavbarContent>
+      <About isOpen={about.isOpen} onOpenChange={about.onOpenChange} />
     </Navbar>
   );
 }
