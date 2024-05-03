@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link} from "@nextui-org/react";
 import { MailIcon } from "@/app/util/MailIcon";
